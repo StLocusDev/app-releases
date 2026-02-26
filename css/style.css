@@ -1,0 +1,200 @@
+/* === Сброс и базовые настройки === */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: #EFE3C6; /* pageColor */
+    color: #311409; /* dark_brown */
+    line-height: 1.5;
+    padding: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* === Контейнер: центрирование и ограничение ширины === */
+.container {
+    background-color: #F5ECD9; /* antik */
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 640px; /* Не растягивается на весь экран на ПК */
+    box-shadow: 0 4px 12px rgba(49, 20, 9, 0.15);
+}
+
+/* === Шапка === */
+.header {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #832C11; /* brown */
+    margin-bottom: 20px;
+}
+
+.brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #832C11;
+    margin-bottom: 8px;
+}
+
+.brand-small {
+    opacity: 0.85;
+}
+
+.brand-divider {
+    margin: 0 6px;
+    opacity: 0.6;
+}
+
+.brand-main {
+    font-size: 1.3rem;
+}
+
+.app-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #832C11;
+    margin: 8px 0 4px;
+}
+
+.app-subtitle {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* === Логотип === */
+.logo-section {
+    text-align: center;
+    margin: 16px 0 24px;
+}
+
+.app-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* === Таблица ссылок === */
+.links-section {
+    margin: 20px 0;
+}
+
+.links-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.links-table td {
+    padding: 8px 4px;
+    vertical-align: top;
+}
+
+.label {
+    font-weight: 600;
+    color: #832C11;
+    width: 90px;
+    padding-right: 12px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    align-items: center;
+}
+
+.link-item {
+    color: #311409;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.link-item:hover {
+    background-color: #D8C4A0; /* antikBar */
+    color: #832C11;
+}
+
+.link-item.disabled {
+    color: #832C11;
+    opacity: 0.6;
+    cursor: default;
+}
+
+.link-item.disabled:hover {
+    background-color: transparent;
+    color: #832C11;
+}
+
+.separator {
+    color: #832C11;
+    opacity: 0.5;
+    user-select: none;
+}
+
+/* === Футер / Контакты === */
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(131, 44, 17, 0.3);
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    opacity: 0.85;
+}
+
+.email-link {
+    color: #832C11;
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* === Адаптив для очень маленьких экранов === */
+@media (max-width: 360px) {
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+    
+    .separator {
+        display: none;
+    }
+    
+    .brand {
+        font-size: 1rem;
+    }
+    
+    .app-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* === Дополнительные отступы для удобства на планшетах/ПК === */
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+    
+    .container {
+        padding: 28px;
+    }
+}
