@@ -3,62 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StLocus</title>
+    
+    <!-- === SEO: Title (заголовок вкладки и поисковой выдачи) === -->
+    <title>StLocus — Приложения для Android | Скачать бесплатно</title>
+    
+    <!-- === SEO: Description (описание для сниппета в поиске) === -->
+    <meta name="description" content="StLocus — разработка мобильных приложений для Android. Скачать бесплатно: Numen (нумерологический анализатор) и другие полезные программы. Без рекламы, Android 8.0+">
+    
+    <!-- === SEO: Keywords (ключевые слова) === -->
+    <meta name="keywords" content="StLocus, приложения Android, скачать бесплатно, Numen, нумерология, мобильные приложения, APK">
+    
+    <!-- === SEO: Author === -->
+    <meta name="author" content="StLocus">
+    
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- === SEO: Schema.org микроразметка для организации === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "StLocus",
+      "description": "Разработка мобильных приложений для Android",
+      "email": "scriptoriumstlocus@gmail.com",
+      "sameAs": []
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Шапка -->
-        <header class="header">
-            <div class="brand">
 
-                <!-- Логотип / Изображение -->
-        <div class="logo-section">
-            
-            <img src="image/ic_stlocus.png" alt="StLocus Logo" class="app-logo">
-            <p class="app-subtitle">StLocus</p>
-        </div>
-            </div>
-            <h1 class="app-title">Numen</h1>
-            <h1 class="app-title">Нумерологический анализатор</h1>
-            <p class="app-subtitle">Бесплатное приложение для Android 8.0+</p>
+    <div class="container">
+        <header class="header">
+            <!-- Упрощенный бренд (слитно, мелко) -->
+            <div class="brand-simple">StLocus</div>
+            <!-- === SEO: H1 — главный заголовок страницы === -->
+            <h1 class="app-title">Мобильные приложения для Android</h1>
+            <p class="app-subtitle">Простые и удобные программы</p>
         </header>
 
-        <!-- Логотип / Изображение -->
-        <div class="logo-section">
-            <!-- Замените src на путь к вашей картинке -->
-            <img src="image/ic_numen.png" alt="Numen Logo" class="app-logo">
+        <!-- === SEO: Текстовый блок с описанием для поисковиков === -->
+        <div class="intro-text">
+            <p>Мы создаем полезные мобильные приложения для Android с минималистичным интерфейсом и без навязчивой рекламы. Все программы бесплатны и совместимы с Android 8.0 и выше.</p>
         </div>
 
-        <!-- Таблица ссылок -->
-        <main class="links-section">
-            <table class="links-table">
-                <tbody>
-                    <tr>
-                        <td class="label">Скачать:</td>
-                        <td class="links">
-                            <a href="https://rustore.ru/app/ru.stlocus.numen" class="link-item" target="_blank" rel="noopener">Ru-store</a>
-                            <span class="separator">|</span>
-                            <a href="https://raw.githubusercontent.com/StLocusDev/app-releases/main/apps/numen/releases/Numen.apk" class="link-item" target="_blank" rel="noopener">Web</a>
-                            <span class="separator">|</span>
-                            <a href="https://stlocusdev.github.io/app-releases/apps/numen/docs/privacy-policy.html" class="link-item">Политика конфиденциальности</a>
-                            <span class="separator">|</span>
-                            <a href="https://stlocusdev.github.io/app-releases/apps/numen/docs/terms-of-use.html" class="link-item">Пользовательское соглашение</a>
-                            <span class="separator">|</span>
-                            <span class="link-item disabled">Описание</span>
-                            <span class="separator">|</span>
-                            <span class="link-item disabled">Кодировка символов</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
+        <!-- Блок с логотипом -->
+        <div class="logo-section">
+            <img src="image/ic_stlocus.png" alt="StLocus Logo" class="app-logo">
+        </div>
 
-        <!-- Обратная связь -->
+        <!-- Список приложений -->
+        <div class="apps-section">
+            <h2 class="section-title">Доступные приложения:</h2>
+            
+            <div class="app-card">
+                <img src="image/ic_numen.png" alt="Numen Logo" class="app-logo">
+                <h3 class="app-name">Numen</h3>
+                <p class="app-desc">Нумерологический анализатор для точных расчетов</p>
+                
+                <div class="links-section">
+                    <table class="links-table">
+                        <tr>
+                            <td class="label">Скачать:</td>
+                            <td class="links">
+                                <a href="https://rustore.ru/app/ru.stlocus.numen" class="link-item">Ru-store</a>
+                                <span class="separator">|</span>
+                                <a href="https://raw.githubusercontent.com/StLocusDev/app-releases/main/apps/numen/releases/Numen.apk" class="link-item">Web</a>
+                                
+                                <!-- Ссылки с переносом строки (полная ширина) -->
+                                <a href="apps/numen/docs/privacy-policy.html" class="link-item link-block">Политика конфиденциальности</a>
+                                <a href="apps/numen/docs/terms-of-use.html" class="link-item link-block">Пользовательское соглашение</a>
+                                <a class="link-item disabled link-block">Описание</a>
+                                <a class="link-item disabled link-block">Кодировка символов</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
-            <p class="contact-label">Обратная связь:</p>
+            <div class="contact-label">Обратная связь:</div>
             <a href="mailto:scriptoriumstlocus@gmail.com" class="email-link">scriptoriumstlocus@gmail.com</a>
         </footer>
     </div>
+
 </body>
 </html>
