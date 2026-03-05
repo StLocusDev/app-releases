@@ -1,0 +1,17 @@
+﻿{
+  "rustore": {
+    "version": "1.0",
+    "versionCode": 1,
+    "releaseDate": "2026-03-07",
+    "storeUrl": "https://www.rustore.ru/catalog/app/ru.stlocus.cyphro",
+    "changelog": "Release v1.0"
+  },
+  "web": {
+    "version": "1.0",
+    "versionCode": 1,
+    "releaseDate": "2026-03-07",
+    "downloadUrl": "https://raw.githubusercontent.com/StLocusDev/app-releases/main/apps/cyphro/releases/Cyphro.apk",
+    "changelog": "Release v1.0"  
+ }
+}
+
