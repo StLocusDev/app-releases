@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numen — Кодировка символов | StLocus</title>
+    <!-- Подключение стилей из папки css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Минимальные стили только для таблиц кодировки */
+        .encoding-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+        .encoding-table th {
+            background-color: rgba(131, 44, 17, 0.1);
+            color: #832C11;
+            font-weight: 700;
+            padding: 8px 4px;
+            text-align: center;
+            border: 1px solid rgba(131, 44, 17, 0.2);
+        }
+        .encoding-table td {
+            padding: 6px 4px;
+            text-align: center;
+            border: 1px solid rgba(131, 44, 17, 0.15);
+        }
+        .alphabet-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #832C11;
+            margin: 20px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid rgba(131, 44, 17, 0.3);
+        }
+        /* Адаптив для таблиц на узких экранах */
+        @media (max-width: 400px) {
+            .encoding-table {
+                font-size: 0.8rem;
+            }
+            .encoding-table th,
+            .encoding-table td {
+                padding: 4px 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="brand-simple">StLocus</div>
+            <div class="brand-main">Мобильные приложения</div>
+            <h1 class="app-title">Numen</h1>
+            <div class="app-subtitle">Кодировка символов</div>
+        </header>
+
+        <!-- Вводный текст -->
+        <p class="intro-text">
+            Таблицы значений символов русского и английского алфавитов, используемые для нумерологических расчётов в приложении.
+        </p>
+
+        <!-- Основной контент -->
+        <div class="apps-section">
+            
+            <!-- Карточка 1: Русский алфавит -->
+            <div class="app-card content-block">
+                <div class="alphabet-title">Русский алфавит</div>
+                <table class="encoding-table">
+                    <tr>
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+                    </tr>
+                    <tr>
+                        <td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td><td>Е</td><td>Ё</td><td>Ж</td><td>З</td>
+                    </tr>
+                    <tr>
+                        <td>И</td><td>Й</td><td>К</td><td>Л</td><td>М</td><td>Н</td><td>О</td><td>П</td><td>Р</td>
+                    </tr>
+                    <tr>
+                        <td>С</td><td>Т</td><td>У</td><td>Ф</td><td>Х</td><td>Ц</td><td>Ч</td><td>Ш</td><td>Щ</td>
+                    </tr>
+                    <tr>
+                        <td>Ъ</td><td>Ы</td><td>Ь</td><td>Э</td><td>Ю</td><td>Я</td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Карточка 2: Английский алфавит -->
+            <div class="app-card content-block">
+                <div class="alphabet-title">Английский алфавит</div>
+                <table class="encoding-table">
+                    <tr>
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+                    </tr>
+                    <tr>
+                        <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td>
+                    </tr>
+                    <tr>
+                        <td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td>
+                    </tr>
+                    <tr>
+                        <td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td><td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Карточка 3: Изменение кодировки -->
+            <div class="app-card content-block">
+                <h3>Изменение кодировки</h3>
+                <p>
+                    Если вы используете альтернативную систему значений, вы можете изменить кодировку под свои нужды. Для этого быстро нажмите на <strong>иконку Пифагора 10 раз</strong> для доступа в экран редактирования значений символов алфавитов.
+                </p>
+                <p>
+                    После внесения изменений расчёты будут производиться в соответствии с новой кодировкой.
+                </p>
+                
+                <div class="warning-box" style="margin-top: 12px;">
+                    <span class="warning-title">⚠️ Ограничения</span>
+                    <p style="margin-bottom: 0;">
+                        При изменённой кодировке символов <strong>не будут выводиться интерпретации</strong> особых букв имени и транзитов.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Карточка 4: Проверка и сброс -->
+            <div class="app-card content-block">
+                <h3>Проверка и сброс настроек</h3>
+                <p>
+                    Для проверки используемой актуальной кодировки символов используйте кнопку меню <strong>«Кодировка алфавита»</strong>.
+                </p>
+                <p>
+                    Если вы очистите хранилище и кэш приложения, восстановятся первоначальные настройки как кодировки символов, так и списка персон.
+                </p>
+            </div>
+        </div>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="contact-label">Обратная связь:</div>
+            <a href="mailto:scriptoriumstlocus@gmail.com" class="email-link">scriptoriumstlocus@gmail.com</a>
+            <div style="margin-top: 16px;">
+                <a href="index.html" class="link-item">← На главную</a>
+                <span class="separator">|</span>
+                <a href="numen-hierarchy.html" class="link-item">Иерархия карты →</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

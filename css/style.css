@@ -38,14 +38,13 @@ body {
 /* === Упрощенный бренд === */
 .brand-simple {
     text-align: center;
-    font-size: 0.9rem;       /* Мелкий шрифт */
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #832C11;          /* Цвет бренда */
-    opacity: 0.7;            /* Полупрозрачность (чтобы не спорил с заголовком) */
-    margin-bottom: 10px;     /* Отступ до заголовка */
-    letter-spacing: 0.5px;   /* Немного воздуха между буквами */
+    color: #832C11;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
-
 
 .brand-main {
     font-size: 1.3rem;
@@ -179,7 +178,7 @@ body {
 
 /* === ВАЖНО: Ссылки с переносом на новую строку === */
 .link-block {
-    flex-basis: 100% !important; /* Принудительно полная ширина */
+    flex-basis: 100% !important;
     width: 100% !important;
     display: block !important;
     margin-top: 6px;
@@ -218,29 +217,99 @@ body {
     text-decoration: underline;
 }
 
+/* ============================================
+   === СТИЛИ ДЛЯ КОНТЕНТНЫХ СТРАНИЦ (ОПИСАНИЯ) ===
+   ============================================ */
+
+.content-block {
+    margin-bottom: 16px;
+}
+
+.content-block h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #832C11;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+.content-block p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.content-block ul,
+.content-block ol {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #311409;
+}
+
+.content-block li {
+    margin-bottom: 6px;
+}
+
+.content-block strong {
+    color: #832C11;
+    font-weight: 600;
+}
+
+/* Блок с предупреждением/важной информацией */
+.warning-box {
+    border: 1px solid #832C11;
+    background-color: rgba(131, 44, 17, 0.05);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.warning-title {
+    font-weight: 700;
+    color: #832C11;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Список источников */
+.source-list {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Адаптив для списков внутри карточек */
+@media (max-width: 480px) {
+    .content-block ul,
+    .content-block ol {
+        padding-left: 16px;
+    }
+}
+
 /* === Адаптив для смартфонов === */
 @media (max-width: 480px) {
     .links {
         gap: 2px 4px;
     }
-    
+
     .label {
         width: auto;
         padding-right: 8px;
         display: block;
         margin-bottom: 8px;
     }
-    
+
     .links-table td {
         display: block;
         width: 100%;
         padding: 4px 0;
     }
-    
+
     .brand {
         font-size: 1rem;
     }
-    
+
     .app-title {
         font-size: 1.2rem;
     }
@@ -259,11 +328,11 @@ body {
     body {
         padding: 32px;
     }
-    
+
     .container {
         padding: 28px;
     }
-    
+
     .links {
         gap: 6px 12px;
     }
