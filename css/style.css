@@ -337,3 +337,31 @@ body {
         gap: 6px 12px;
     }
 }
+/* === Стили для документов с флагами === */
+.doc-label {
+    display: block;
+    width: 100%;
+    color: #311409;
+    font-weight: 500;
+    padding: 4px 0;
+    margin-top: 6px;
+    pointer-events: none; /* отключает выделение и тап-эффекты на тексте */
+    user-select: none;    /* запрещает выделение текста */
+}
+
+.flag-links {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.flag-links .link-item {
+    padding: 4px 6px;
+}
+
+/* Убираем залипание ховера на мобильных для флагов */
+@media (hover: none) {
+    .flag-links .link-item:active {
+        background-color: #D8C4A0;
+    }
+}
